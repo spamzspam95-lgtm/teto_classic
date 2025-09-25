@@ -317,10 +317,7 @@ body{
   margin-left: 8px;
 }
 
-body {
-  font-family: Tahoma, sans-serif;
-  text-align: center;
-}
+
 
 nav {
   margin: 20px;
@@ -345,3 +342,4 @@ section {
   border: 1px solid #666;
   display: inline-block;
 }
+
