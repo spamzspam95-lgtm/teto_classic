@@ -121,13 +121,6 @@ if (orderForm) {
     closeModal();
   });
 }
-function showSection(id) {
-  // أخفي كل الأقسام
-  document.getElementById('shirts').style.display = 'none';
-  document.getElementById('pants').style.display = 'none';
-  document.getElementById('shoes').style.display = 'none';
 
-  // أظهر القسم المطلوب
-  document.getElementById(id).style.display = 'block';
-}
+
 
