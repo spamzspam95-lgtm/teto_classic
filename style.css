@@ -316,3 +316,32 @@ body{
   vertical-align: middle;
   margin-left: 8px;
 }
+
+body {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+}
+
+nav {
+  margin: 20px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+section {
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  width: 80%;
+}
+
+.card {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #666;
+  display: inline-block;
+}
