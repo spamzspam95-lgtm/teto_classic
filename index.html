@@ -1,163 +1,169 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>تيتو كلاسيك - متجر ملابس</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <h1><img src="images/logo.png" alt="تيتو كلاسيك" class="logo"> تيتو كلاسيك</h1>
-        <p class="tag">ملابس كلاسيكية أنيقة</p>
-        <p class="bio">🥇التميز ليس للجميع ، بل هو لأولئك الذين يفعلون كل ما يلزم 🥇</p>
-        <p class="hashtag">"#تميزك_سر_نجاحك 🖤🏆"</p>
-      </div>
-
-      <nav class="top-nav" aria-label="تصفية الأقسام">
-        <button class="cat-btn active" data-cat="all"><img src="images/all.png" class="cat-icon" alt=""> الكل</button>
-        <button class="cat-btn" data-cat="shirts"><img src="images/shirt.png" class="cat-icon" alt=""> القمصان</button>
-        <button class="cat-btn" data-cat="pants"><img src="images/pants.png" class="cat-icon" alt=""> البناطيل</button>
-        <button class="cat-btn" data-cat="shoes"><img src="images/shoes.png" class="cat-icon" alt=""> الجزم</button>
-      </nav>
-
-      <div class="contacts">
-        <a class="tel" href="tel:+201275533360">📞: +201275533360</a>
-        <div class="location">📍: SUG 🇸🇩 - EGP 🇪🇬</div>
-        <a class="social" href="https://instagram.com/teto__classic" target="_blank" rel="noopener">Instagram</a>
-        <a class="social" href="https://tiktok.com/@teto___classic" target="_blank" rel="noopener">TikTok</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="hero">
-      <h2>أزياء كلاسيكية — جودة وذوق رفيع</h2>
-      <p>اضغط على أي قسم لتصفية المنتجات. اضغط "اطلب الآن" لفتح نموذج التوصيل وإرسال الطلب عبر واتساب.</p>
-    </section>
-
-    <!-- products grid: أقسام مرئية/مخفية حسب الفلتر -->
-    <section id="products-grid" class="products-grid">
-      <!-- === شغّل/انسخ البطاقات أدناه لتضيف منتجاتك === -->
-
-      <!-- Shirt example -->
-      <article class="card" data-cat="shirts">
-        <div class="images">
-          <div class="main-img"><img src="images/shirt1_main.jpg" alt="قميص كلاسيكي أبيض" data-current="0"></div>
-          <div class="thumbs">
-            <div class="thumb" data-index="0"><img src="images/shirt1_main.jpg" alt=""></div>
-            <div class="thumb" data-index="1"><img src="images/shirt1_2.jpg" alt=""></div>
-            <div class="thumb" data-index="2"><img src="images/shirt1_3.jpg" alt=""></div>
-          </div>
-        </div>
-        <h3>قميص كلاسيكي أبيض</h3>
-        <div class="meta">
-          <div class="price">EGP 450</div>
-          <div class="actions">
-            <button class="btn details-btn">عرض</button>
-            <button class="btn order-now">اطلب الآن</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- Pants example -->
-      <article class="card" data-cat="pants" style="display:none">
-        <div class="images">
-          <div class="main-img"><img src="images/pants1_main.jpg" alt="بنطال كتان رمادي" data-current="0"></div>
-          <div class="thumbs">
-            <div class="thumb" data-index="0"><img src="images/pants1_main.jpg" alt=""></div>
-            <div class="thumb" data-index="1"><img src="images/pants1_2.jpg" alt=""></div>
-            <div class="thumb" data-index="2"><img src="images/pants1_3.jpg" alt=""></div>
-          </div>
-        </div>
-        <h3>بنطال كتان رمادي</h3>
-        <div class="meta">
-          <div class="price">EGP 680</div>
-          <div class="actions">
-            <button class="btn details-btn">عرض</button>
-            <button class="btn order-now">اطلب الآن</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- Shoes example -->
-      <article class="card" data-cat="shoes" style="display:none">
-        <div class="images">
-          <div class="main-img"><img src="images/shoes1_main.jpg" alt="حذاء جلد بني" data-current="0"></div>
-          <div class="thumbs">
-            <div class="thumb" data-index="0"><img src="images/shoes1_main.jpg" alt=""></div>
-            <div class="thumb" data-index="1"><img src="images/shoes1_2.jpg" alt=""></div>
-            <div class="thumb" data-index="2"><img src="images/shoes1_3.jpg" alt=""></div>
-          </div>
-        </div>
-        <h3>حذاء جلد بني</h3>
-        <div class="meta">
-          <div class="price">EGP 980</div>
-          <div class="actions">
-            <button class="btn details-btn">عرض</button>
-            <button class="btn order-now">اطلب الآن</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- انسخ الكتلة <article class="card"> وأعدل الصور والعنوان والسعر لإضافة منتجاتك -->
-    </section>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>حقوق الملكية © <span id="year"></span> تيتو كلاسيك</div>
-        <div class="social-small">
-          <a href="https://instagram.com/teto__classic" target="_blank">Instagram</a>
-          <a href="https://tiktok.com/@teto___classic" target="_blank">TikTok</a>
-        </div>
-      </div>
-    </footer>
-  </main>
-
-  <!-- Order modal -->
-  <div id="order-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
-    <div class="modal-content">
-      <button class="modal-close" aria-label="إغلاق">&times;</button>
-      <h3 id="modal-title">نموذج توصيل الطلب</h3>
-      <p id="modal-product" class="modal-product">المنتج: —</p>
-
-      <form id="order-form">
-        <label>الاسم الكامل
-          <input type="text" id="cust-name" required placeholder="مثال: محمد علي">
-        </label>
-
-        <label>رقم التليفون
-          <input type="tel" id="cust-phone" required placeholder="+20XXXXXXXXXX">
-        </label>
-
-        <label>المدينة / المنطقة
-          <input type="text" id="cust-city" required placeholder="المدينة">
-        </label>
-
-        <label>العنوان بالتفصيل
-          <textarea id="cust-address" required placeholder="العنوان بالتفصيل"></textarea>
-        </label>
-
-        <label>الكمية
-          <input type="number" id="cust-qty" min="1" value="1" required>
-        </label>
-
-        <label>ملاحظات إضافية (اختياري)
-          <textarea id="cust-notes" placeholder="ملاحظات عن اللون، التوصيل..."></textarea>
-        </label>
-
-        <div class="form-actions">
-          <button type="submit" class="btn send-btn">إرسال عبر واتساب</button>
-          <button type="button" class="btn secondary modal-cancel">إلغاء</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
-
+ <!doctype html>
+ <html lang="ar" dir="rtl">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Teto Classic — سبلاملا رجتم</title>
+ <link href="https://fonts.googleapis.com/css2?
+ family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/a2d9b6c7c9.js"
+ crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+ <header>
+ <div class="brand">
+ <div class="logo">TC</div>
+ <div class="store-name">
+ <b>Teto Classic</b>
+ <small>تاراوسسكإو سبلام — ةيرصم ةقانأ</small>
+ </div>
+ </div>
+ <div class="icons">
+ <button style="background:transparent;border:0;cursor:pointer;font-size:
+ 18px" title="ثحب"><i class="fa fa-search"></i></button>
+ <div class="cart">
+ <button id="open-cart" style="background:transparent;border:
+ 0;cursor:pointer;font-size:20px"><i class="fa fa-shopping-bag"></i></button>
+ <div class="count" id="cart-count">0</div>
+ </div>
+ </div>
+ </header>
+ <main>
+ <div class="socials">
+ <a href="https://www.instagram.com/teto_classic_egy?
+ utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"
+ 1
+rel="noopener noreferrer"><i class="fa fa-instagram"></i> مارجتسنالا</a>
+ <a href="https://www.tiktok.com/@teto_classic" target="_blank"
+ rel="noopener noreferrer"><i class="fa fa-music"></i> كوت كيت</a>
+ </div>
+ <section class="intro">
+ <div style="display:flex;justify-content:space-between;align
+items:center;gap:12px;flex-wrap:wrap">
+ <div>
+ <h1 style="margin:0">Teto Classic</h1>
+ <p class="caption">ربع نآلا بلطاو ةقانألا ملاعل مضنا DM — ةنياعم • 🚚 يناجم ليصوت 
+يرصح نامض • 📦 ملاتسالا لبق 🛡️</p>
+ <p style="margin:8px 0;color:var(--muted);font-size:
+ 14px">@teto_classic_group</p>
+ </div>
+ <div class="badges">
+ <div class="badge"><i class="fa fa-truck"></i> يناجم ليصوت</div>
+ <div class="badge"><i class="fa fa-eye"></i> ملاتسالا لبق ةنياعم</div>
+ <div class="badge"><i class="fa fa-shield-alt"></i> يرصح نامض</div>
+ </div>
+ </div>
+ <div style="margin-top:8px;background:#fff;border-radius:8px;padding:
+ 10px;border:1px dashed #eee;color:var(--muted)">لبق ةنياعم•🚚 يناجم ليصوت" :نشباكلا هِد 
+يرصح نامض•📦 ملاتسالا🛡️\n@teto_classic_group\nربع نآلا بلطاو ةقانألا ملاعل مضنا DM 📩"</div>
+ </section>
+ <section class="products" id="products">
+ <article class="card">
+ <img src="https://via.placeholder.com/800x600?text=Product+1"
+ alt="Product 1">
+ <div class="body">
+ <div style="display:flex;justify-content:space-between;align
+items:center">
+ <div>
+ <div style="font-weight:700">يكيسلاك صيمق</div>
+ <div style="font-size:13px;color:var(--muted)">حيرم ينطق شامق</div>
+ </div>
+ <div class="price">EGP 350</div>
+ </div>
+ <div style="display:flex;gap:8px;margin-top:6px">
+ <button class="buy" onclick="openOrderModal('يكيسلاك صيمق','EGP 
+350')">نآلا بلطا</button>
+ <button class="btn-secondary" onclick="preview('صيمق 
+يكيسلاك')">ةنياعم</button>
+ </div>
+ 2
+</div>
+ </article>
+ <article class="card">
+ <img src="https://via.placeholder.com/800x600?text=Product+2"
+ alt="Product 2">
+ <div class="body">
+ <div style="display:flex;justify-content:space-between;align
+items:center">
+ <div>
+ <div style="font-weight:700">يرصع تريش يت</div>
+ <div style="font-size:13px;color:var(--muted)">ةددعتم تاساقم</div>
+ </div>
+ <div class="price">EGP 250</div>
+ </div>
+ <div style="display:flex;gap:8px;margin-top:6px">
+ <button class="buy" onclick="openOrderModal('يرصع تريش يت','EGP 
+250')">نآلا بلطا</button>
+ <button class="btn-secondary" onclick="preview('تريش يت 
+يرصع')">ةنياعم</button>
+ </div>
+ </div>
+ </article>
+ <article class="card">
+ <img src="https://via.placeholder.com/800x600?text=Product+3"
+ alt="Product 3">
+ <div class="body">
+ <div style="display:flex;justify-content:space-between;align
+items:center">
+ <div>
+ <div style="font-weight:700">فيفخ تيكاج</div>
+ <div style="font-size:13px;color:var(--muted)">مسوملل بسانم</div>
+ </div>
+ <div class="price">EGP 650</div>
+ </div>
+ <div style="display:flex;gap:8px;margin-top:6px">
+ <button class="buy" onclick="openOrderModal('فيفخ تيكاج','EGP 650')">بلطا 
+نآلا</button>
+ <button class="btn-secondary" onclick="preview('فيفخ تيكاج')">ةنياعم</
+ button>
+ </div>
+ </div>
+ </article>
+ </section>
+ 3
+</main>
+ <footer>
+    © <span id="year"></span> Teto Classic — ةظوفحم قوقحلا عيمج
+ </footer>
+ <div class="modal-backdrop" id="modal">
+ <div class="modal" role="dialog" aria-modal="true">
+ <h3 id="modal-title">جتنملا اذه بلطا</h3>
+ <div style="font-size:13px;color:var(--muted);margin-bottom:8px">تانايب لأما 
+باستاو ربع رجتملا كلام ىلإ ةلاسرلا ليوحت متيسو ليصوتلا</div>
+ <div class="field">
+ <label>جتنملا مسا</label>
+ <input type="text" id="product-name" readonly>
+ </div>
+ <div class="row">
+ <div class="field">
+ <label>لماكلا مسالا</label>
+ <input type="text" id="customer-name" placeholder="يلع دمحم :لاثم">
+ </div>
+ <div class="field">
+ <label>فتاهلا مقر</label>
+ <input type="tel" id="customer-phone" placeholder="01012345678 :لاثم">
+ </div>
+ </div>
+ <div class="field">
+ <label>(ليصوتلا) ناونعلا</label>
+ <textarea id="customer-address" rows="2" placeholder="يح ،ةنيدم ،عراش"></
+ textarea>
+ </div>
+ <div class="field">
+ <label>ةيفاضإ تاظحلام</label>
+ <textarea id="customer-note" rows="2" placeholder="يأ وأ ،نوللا ،ساقملا 
+تاظحلام"></textarea>
+ </div>
+ <div class="modal-actions">
+ <button class="btn-close" onclick="closeModal()">قلاغإ</button>
+ <button id="send-ws" class="btn-send">باستاو ربع لاسرإ</button>
+ </div>
+ <p style="font-size:12px;color:var(--muted);margin-top:8px">حتف متيس :ةظحلام 
+رجتملا كلام مقرب دوكلا يف باستاولا مقر لدبتسا .بلطلا لاسرإل (بيو باستاو وأ) باستاو.</p>
+ 4
+</div>
+ </div>
+ <script src="script.js"></script>
+ </body>
+ </html>
